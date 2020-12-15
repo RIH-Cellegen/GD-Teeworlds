@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Codes/XVelCounter.gd" type="Script" id=1]
+[ext_resource path="res://Codes/FPSCounter.gd" type="Script" id=2]
+[ext_resource path="res://Codes/YVelCounter.gd" type="Script" id=3]
+[ext_resource path="res://Codes/JumpCounter.gd" type="Script" id=4]
+
+[node name="UI" type="Node2D"]
+
+[node name="background" type="Panel" parent="."]
+margin_left = -720.0
+margin_top = -456.0
+margin_right = 720.0
+margin_bottom = -380.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="XVelCounter" type="Label" parent="."]
+margin_left = -712.0
+margin_top = -416.0
+margin_right = -572.0
+margin_bottom = -402.0
+text = "POSITION.x = 0.00"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YVelCounter" type="Label" parent="."]
+margin_left = -712.0
+margin_top = -430.0
+margin_right = -624.0
+margin_bottom = -416.0
+text = "POSITION.y ="
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="JumpCounter" type="Label" parent="."]
+margin_left = -712.0
+margin_top = -402.0
+margin_right = -656.0
+margin_bottom = -388.0
+text = "JUMPS = "
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FPSCounter" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "FPS: 0"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
