@@ -50,8 +50,10 @@ __meta__ = {
 }
 
 [node name="FPSCounter" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = -712.0
+margin_top = -444.0
+margin_right = -674.0
+margin_bottom = -430.0
 text = "FPS: 0"
 script = ExtResource( 2 )
 __meta__ = {
